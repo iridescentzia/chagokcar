@@ -14,7 +14,7 @@ export default function VehicleSearch() {
         : vehicles;
 
     const handleSelect = (vehicle: Vehicle) => {
-        navigate(`/vehicles/${vehicle.id}`);
+        navigate("/vehicle-select", { state: { chosenVehicle: vehicle } });
     };
 
     return (
