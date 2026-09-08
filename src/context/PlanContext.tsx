@@ -1,9 +1,10 @@
-import { createContext, useContext, useEffect, useState } from "react";
-import type { ReactNode } from "react";
-import type { Vehicle, PlanState } from "../types";
+import {createContext, useContext, useEffect, useState} from "react";
+import type {ReactNode} from "react";
+import type {Vehicle, PlanState} from "../types";
 
 interface PlanContextType extends PlanState {
     setSelectedVehicle: (vehicle: Vehicle) => void;
+    setVehicleAndReset: (vehicle: Vehicle) => void;
     setTargetDownPayment: (amount: number) => void;
     setCurrentSavings: (amount: number) => void;
     setTargetMonths: (months: number) => void;
@@ -35,7 +36,7 @@ function getInitialState(): PlanState {
     }
 }
 
-export function PlanProvider({ children }: { children: ReactNode }) {
+export function PlanProvider({children}: { children: ReactNode }) {
     const [state, setState] = useState<PlanState>(getInitialState);
 
     useEffect(() => {
@@ -43,16 +44,27 @@ export function PlanProvider({ children }: { children: ReactNode }) {
     }, [state]);
 
     const setSelectedVehicle = (vehicle: Vehicle) =>
-        setState((prev) => ({ ...prev, selectedVehicle: vehicle }));
+        setState((prev) => ({...prev, selectedVehicle: vehicle}));
+
+    const setVehicleAndReset = (vehicle: Vehicle) =>
+        setState((prev) => {
+            if (prev.selectedVehicle?.id === vehicle.id) {
+                return {...prev, selectedVehicle: vehicle};
+            }
+            return {
+                ...initialState,
+                selectedVehicle: vehicle,
+            };
+        });
 
     const setTargetDownPayment = (amount: number) =>
-        setState((prev) => ({ ...prev, targetDownPayment: amount }));
+        setState((prev) => ({...prev, targetDownPayment: amount}));
 
     const setCurrentSavings = (amount: number) =>
-        setState((prev) => ({ ...prev, currentSavings: amount }));
+        setState((prev) => ({...prev, currentSavings: amount}));
 
     const setTargetMonths = (months: number) =>
-        setState((prev) => ({ ...prev, targetMonths: months }));
+        setState((prev) => ({...prev, targetMonths: months}));
 
     const resetPlan = () => {
         setState(initialState);
@@ -63,6 +75,7 @@ export function PlanProvider({ children }: { children: ReactNode }) {
             value={{
                 ...state,
                 setSelectedVehicle,
+                setVehicleAndReset,
                 setTargetDownPayment,
                 setCurrentSavings,
                 setTargetMonths,
