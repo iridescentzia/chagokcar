@@ -130,3 +130,20 @@ button {
   margin-bottom: 16px;
   min-height: 240px;
 }
+
+.splash-screen {
+  /* .content의 padding(20px 20px 32px)을 상쇄해서 phone 전체를 채움 */
+  margin: -20px -20px -32px;
+  min-height: calc(100% + 52px);
+  background: var(--color-primary-light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.splash-logo {
+  width: 220px;
+  height: auto;
+}
