@@ -77,15 +77,26 @@ button {
 .page-header {
   padding: 4px 0 12px;
 }
+
 .back-button {
   width: 36px;
   height: 36px;
   border: none;
+  border-radius: 50%;
   background: transparent;
   font-size: 1.5rem;
   color: var(--color-text);
   cursor: pointer;
   padding: 0;
+  margin-left: -8px; /* 원하는 만큼 음수값 조정 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease;
+}
+
+.back-button:hover {
+  background: var(--color-border);
 }
 
 /* Button */
@@ -99,7 +110,14 @@ button {
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
+  transition: all 0.2s ease;
 }
+
+.btn-primary:hover:not(:disabled) {
+  background: #2d3748;
+  transform: translateY(-1px);
+}
+
 .btn-primary:disabled {
   background: var(--color-border);
   color: var(--color-text-light);
@@ -114,10 +132,23 @@ button {
   padding: 16px;
   margin-bottom: 8px;
   cursor: pointer;
+  transition: all 0.2s ease;
 }
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px -8px rgba(0, 0, 0, 0.15);
+  border-color: var(--color-primary);
+}
+
 .card-selected {
   border: 1.5px solid var(--color-primary);
   background: var(--color-primary-light);
+}
+
+.card-selected:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px -8px rgba(22, 163, 74, 0.2);
 }
 
 .image-box {
@@ -190,4 +221,40 @@ button {
 
 .onboarding-cta {
   margin-top: 48px; /* 원하는 만큼 값 조정 */
+}
+
+.vehicle-list {
+  margin-bottom: 20px;
+}
+
+.vehicle-card-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.vehicle-name {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.vehicle-price {
+  font-size: 0.85rem;
+  color: var(--color-text-light);
+}
+
+.search-link-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  width: 100%;
+  padding: 12px;
+  background: none;
+  border: none;
+  color: var(--color-text-light);
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin-bottom: 20px;
 }
