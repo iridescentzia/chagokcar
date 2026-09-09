@@ -1,22 +1,13 @@
 import { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { Check, Search } from "lucide-react";
-import { vehicles } from "../data/vehicles";
+import { popularVehicles } from "../data/vehicles";
 import Header from "../components/Header";
 import Card from "../components/Card";
 import Button from "../components/Button";
 import PageLayout from "../components/PageLayout";
 import type { Vehicle } from "../types";
 
-// 임시 인기 차량 5종 (추후 실제 인기 데이터로 교체 예정)
-const POPULAR_IDS = [
-    "tesla-model-y",
-    "kia-ev4",
-    "porsche-taycan",
-    "hyundai-ioniq-5",
-    "bmw-x3",
-];
-const popularVehicles = vehicles.filter((v) => POPULAR_IDS.includes(v.id));
 
 export default function VehicleSelect() {
     const navigate = useNavigate();
@@ -29,6 +20,7 @@ export default function VehicleSelect() {
     const [selectedId, setSelectedId] = useState<string | null>(null);
 
     useEffect(() => {
+        console.log("[VehicleSelect] useEffect 실행, chosenFromSearch:", chosenFromSearch);
         if (chosenFromSearch) {
             setDisplayList((prev) => {
                 const withoutDup = prev.filter((v) => v.id !== chosenFromSearch.id);
@@ -83,7 +75,10 @@ export default function VehicleSelect() {
 
             <button
                 className="search-link-button"
-                onClick={() => navigate("/vehicle-search")}
+                onClick={() => {
+                    console.log("[VehicleSelect] 검색 이동 시 selectedId:", selectedId);
+                    navigate("/vehicle-search", { state: { currentSelectedId: selectedId } })
+                }}
             >
                 <Search size={16} />
                 다른 차량 검색하기

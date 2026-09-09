@@ -323,3 +323,14 @@ export const vehicles: Vehicle[] = [
         image: "/vehicles/polestar-4.webp",
     },
 ];
+
+export const POPULAR_IDS = [
+    "tesla-model-y",
+    "kia-ev4",
+    "porsche-taycan",
+    "hyundai-ioniq-5",
+    "bmw-x3",
+];
+export const popularVehicles = vehicles.filter((v) =>
+    POPULAR_IDS.includes(v.id)
+);
