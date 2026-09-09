@@ -391,6 +391,7 @@ button {
   color: var(--color-error);
   font-size: 0.85rem;
   margin: -8px 0 16px;
+  text-align: center;
 }
 
 .goal-input-wrapper {
