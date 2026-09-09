@@ -55,7 +55,7 @@ export default function VehicleDetail() {
             </ImageBox>
 
             <p className="vehicle-detail-notice">
-                현재 기준 예상 차량 가격이며 제조사 정책 및 옵션 선택에 따라
+                현재 기준 예상 차량 가격이며, 제조사 정책 및 옵션 선택에 따라
                 <br />
                 실제 구매 가격은 달라질 수 있습니다.
             </p>
