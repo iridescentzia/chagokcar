@@ -86,10 +86,10 @@ export default function GoalSetting() {
             <h1 className="page-title">
                 {selectedVehicle.name} 구매를 위해
                 <br />
-                목표를 설정해 보세요
+                목표를 설정해 보세요.
             </h1>
             <p className="page-description">
-                현재 준비한 자금과 목표 기간을 설정하면
+                목표 선수금과 현재 준비금, 목표 기간을 설정하면
                 <br />
                 매월 필요한 금액을 계산해드려요.
             </p>
@@ -112,7 +112,7 @@ export default function GoalSetting() {
                         inputMode="numeric"
                         value={downPaymentInput}
                         onChange={(e) => setDownPaymentInput(formatNumberInput(e.target.value))}
-                        placeholder="목표 선수금을 입력해주세요"
+                        placeholder="목표 선수금을 입력해주세요."
                         className="goal-input"
                     />
                     {downPaymentInput && <span className="goal-input-suffix">원</span>}
@@ -127,7 +127,7 @@ export default function GoalSetting() {
                         inputMode="numeric"
                         value={savingsInput}
                         onChange={(e) => setSavingsInput(formatNumberInput(e.target.value))}
-                        placeholder="현재 준비한 금액을 입력해주세요"
+                        placeholder="현재 준비한 금액을 입력해주세요."
                         className="goal-input"
                     />
                     {savingsInput && <span className="goal-input-suffix">원</span>}

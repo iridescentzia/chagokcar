@@ -44,11 +44,9 @@ export default function VehicleSelect() {
                 목표로 할까요?
             </h1>
             <p className="page-description">
-                원하는 차량을 선택하면
+                사고 싶은 차량을 선택해보세요.
                 <br />
-                차량 가격을 기준으로
-                <br />
-                선수금과 월 납입 계획을 계산할 수 있어요.
+                선택한 차량을 기준으로 구매 계획을 세워볼게요.
             </p>
 
             <div className="vehicle-list">
