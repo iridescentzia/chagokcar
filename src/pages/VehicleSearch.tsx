@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { vehicles } from "../data/vehicles";
 import type { Vehicle } from "../types";
+import PageLayout from "../components/PageLayout.tsx";
 
 export default function VehicleSearch() {
     const navigate = useNavigate();
@@ -18,7 +19,7 @@ export default function VehicleSearch() {
     };
 
     return (
-        <div style={{ padding: 24 }}>
+        <PageLayout>
             <h1>원하는 차량을 검색해보세요.</h1>
 
             <input
@@ -61,6 +62,6 @@ export default function VehicleSearch() {
                     ))}
                 </ul>
             )}
-        </div>
+        </PageLayout>
     );
 }

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { usePlan } from "../context/PlanContext";
+import PageLayout from "../components/PageLayout.tsx";
 
 const MONTH_OPTIONS = [24, 36, 48];
 
@@ -71,7 +72,7 @@ export default function GoalSetting() {
     };
 
     return (
-        <div style={{ padding: 24 }}>
+        <PageLayout>
             <h1>{selectedVehicle.name} 구매를 위해 목표를 설정해보세요</h1>
             <p>매월 준비하면 좋을 금액을 계산해드려요.</p>
 
@@ -116,6 +117,6 @@ export default function GoalSetting() {
             {error && <p style={{ color: "red" }}>{error}</p>}
 
             <button onClick={handleSubmit}>월 필요 금액 계산하기</button>
-        </div>
+        </PageLayout>
     );
 }

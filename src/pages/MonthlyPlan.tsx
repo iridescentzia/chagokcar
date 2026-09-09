@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { usePlan } from "../context/PlanContext";
 import { calculatePlan } from "../utils/calculate";
+import PageLayout from "../components/PageLayout.tsx";
 
 export default function MonthlyPlan() {
     const navigate = useNavigate();
@@ -30,7 +31,7 @@ export default function MonthlyPlan() {
     );
 
     return (
-        <div style={{ padding: 24 }}>
+        <PageLayout>
             <h1>목표 차량 구매를 위해 매월 이만큼 모아보세요</h1>
 
             <div style={{ padding: 24, background: "#f5f5f5", marginBottom: 24 }}>
@@ -54,6 +55,6 @@ export default function MonthlyPlan() {
             <button onClick={() => navigate("/goal-setting")}>
                 계획 다시 조정하기
             </button>
-        </div>
+        </PageLayout>
     );
 }

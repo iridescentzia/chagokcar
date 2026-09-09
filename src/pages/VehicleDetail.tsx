@@ -1,6 +1,7 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { vehicles } from "../data/vehicles";
 import { usePlan } from "../context/PlanContext";
+import PageLayout from "../components/PageLayout.tsx";
 
 export default function VehicleDetail() {
     const { id } = useParams<{ id: string }>();
@@ -23,7 +24,7 @@ export default function VehicleDetail() {
     };
 
     return (
-        <div style={{ padding: 24 }}>
+        <PageLayout>
             <h1>차량 상세</h1>
 
             <img
@@ -41,6 +42,6 @@ export default function VehicleDetail() {
             <button onClick={handleConfirm}>
                 이 차량으로 계획 세우기
             </button>
-        </div>
+        </PageLayout>
     );
 }
