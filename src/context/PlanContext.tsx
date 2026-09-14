@@ -1,6 +1,6 @@
 import {createContext, useContext, useEffect, useState} from "react";
 import type {ReactNode} from "react";
-import type {Vehicle, PlanState} from "../types";
+import type {Vehicle, PlanState} from "../types/plan.ts";
 
 interface PlanContextType extends PlanState {
     setSelectedVehicle: (vehicle: Vehicle) => void;

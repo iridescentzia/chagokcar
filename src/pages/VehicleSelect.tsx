@@ -6,7 +6,7 @@ import Header from "../components/Header";
 import Card from "../components/Card";
 import Button from "../components/Button";
 import PageLayout from "../components/PageLayout";
-import type { Vehicle } from "../types";
+import type { Vehicle } from "../types/plan.ts";
 
 
 export default function VehicleSelect() {

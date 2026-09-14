@@ -5,7 +5,7 @@ import { vehicles, popularVehicles } from "../data/vehicles";
 import Header from "../components/Header";
 import Card from "../components/Card";
 import PageLayout from "../components/PageLayout";
-import type { Vehicle } from "../types";
+import type { Vehicle } from "../types/plan.ts";
 
 export default function VehicleSearch() {
     const navigate = useNavigate();

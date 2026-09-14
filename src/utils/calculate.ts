@@ -1,4 +1,4 @@
-import type { PlanResult } from "../types";
+import type { PlanResult } from "../types/plan.ts";
 
 export function calculatePlan(
     vehiclePrice: number,
