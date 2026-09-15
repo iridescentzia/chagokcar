@@ -565,3 +565,20 @@ button {
   color: var(--color-primary);
   margin: 0;
 }
+
+.onboarding-checklist {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.onboarding-checklist-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+}

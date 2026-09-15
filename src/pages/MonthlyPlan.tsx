@@ -29,12 +29,14 @@ export default function MonthlyPlan() {
         );
     }
 
-    const result = calculatePlan(
-        selectedVehicle.price,
+    const result = calculatePlan({
+        expectedPurchasePrice: selectedVehicle.price,
         targetDownPayment,
         currentSavings,
-        targetMonths
-    );
+        planMethod: "period",
+        targetMonths,
+        monthlySavings: 0,
+    });
 
     return (
         <PageLayout>
