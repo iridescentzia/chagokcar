@@ -3,12 +3,13 @@
   --color-primary: #16a34a;      /* 초록 강조 (선택 상태, 체크 등) */
   --color-primary-light: #e9f5eb;
   --color-black: #111827;        /* CTA 버튼 배경 */
-  --color-bg: #f7f7f8;           /* 전체 배경 */
+  --color-bg: #ffffff;           /* 전체 배경 */
   --color-card: #ffffff;
   --color-text: #111827;
   --color-text-light: #6b7280;
   --color-border: #e5e7eb;
   --color-error: #dc2626;
+  --color-notice-bg: #f7f7f8;
 
   --radius-md: 12px;
   --radius-lg: 16px;
@@ -161,7 +162,7 @@ button {
   align-items: center;
   justify-content: center;
   padding: 24px;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
   min-height: 240px;
 }
 
@@ -337,10 +338,18 @@ button {
 
 .vehicle-detail-notice {
   text-align: center;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   color: var(--color-text-light);
   line-height: 1.6;
-  margin: 50px 0 50px;
+  background: var(--color-notice-bg);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  margin: 20px 0 50px;
+}
+
+.vehicle-detail-notice-emphasis {
+  color: var(--color-text);
+  font-weight: 700;
 }
 
 .goal-field {

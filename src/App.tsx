@@ -7,6 +7,7 @@ import VehicleDetail from "./pages/VehicleDetail";
 import GoalSetting from "./pages/GoalSetting";
 import MonthlyPlan from "./pages/MonthlyPlan";
 import Complete from "./pages/Complete"
+import PurchasePrice from "./pages/PurchasePrice";
 
 function App() {
     return (
@@ -20,6 +21,7 @@ function App() {
                 <Route path="/goal-setting" element={<GoalSetting/>}/>
                 <Route path="/monthly-plan" element={<MonthlyPlan/>}/>
                 <Route path="/complete" element={<Complete/>}/>
+                <Route path="/purchase-price" element={<PurchasePrice/>}/>
             </Routes>
         </BrowserRouter>
     );
