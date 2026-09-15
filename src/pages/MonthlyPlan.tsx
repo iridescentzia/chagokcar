@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { usePlan } from "../context/PlanContext";
-import { calculatePlan } from "../utils/calculate";
+import { calculatePlan } from "../utils/calculatePlan.ts";
 import Header from "../components/Header";
 import Button from "../components/Button";
 import PageLayout from "../components/PageLayout";
