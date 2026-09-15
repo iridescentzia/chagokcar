@@ -8,6 +8,7 @@ import GoalSetting from "./pages/GoalSetting";
 import MonthlyPlan from "./pages/MonthlyPlan";
 import Complete from "./pages/Complete"
 import PurchasePrice from "./pages/PurchasePrice";
+import DownPayment from "./pages/DownPayment";
 
 function App() {
     return (
@@ -22,6 +23,7 @@ function App() {
                 <Route path="/monthly-plan" element={<MonthlyPlan/>}/>
                 <Route path="/complete" element={<Complete/>}/>
                 <Route path="/purchase-price" element={<PurchasePrice/>}/>
+                <Route path="/down-payment" element={<DownPayment/>}/>
             </Routes>
         </BrowserRouter>
     );
