@@ -1,4 +1,4 @@
-import type { Vehicle } from "../types/vehicle.ts";
+import type { Vehicle } from "../types/vehicle";
 
 export const vehicles: Vehicle[] = [
     // Hyundai
@@ -10,6 +10,7 @@ export const vehicles: Vehicle[] = [
         fuelType: "gasoline",
         displacement: 1598,
         powertrain: "1.6 가솔린",
+        bondCategory: "general",
     },
     {
         id: "hyundai-sonata",
@@ -19,6 +20,7 @@ export const vehicles: Vehicle[] = [
         fuelType: "gasoline",
         displacement: 1999,
         powertrain: "2.0 가솔린",
+        bondCategory: "general",
     },
     {
         id: "hyundai-grandeur",
@@ -28,6 +30,7 @@ export const vehicles: Vehicle[] = [
         fuelType: "hybrid",
         displacement: 1598,
         powertrain: "1.6 터보 하이브리드",
+        bondCategory: "general",
     },
     {
         id: "hyundai-kona",
@@ -37,6 +40,7 @@ export const vehicles: Vehicle[] = [
         fuelType: "gasoline",
         displacement: 1598,
         powertrain: "1.6 터보 가솔린",
+        bondCategory: "multipurpose",
     },
     {
         id: "hyundai-tucson",
@@ -46,6 +50,7 @@ export const vehicles: Vehicle[] = [
         fuelType: "gasoline",
         displacement: 1598,
         powertrain: "1.6 터보 가솔린",
+        bondCategory: "multipurpose",
     },
     {
         id: "hyundai-santafe",
@@ -55,6 +60,7 @@ export const vehicles: Vehicle[] = [
         fuelType: "hybrid",
         displacement: 1598,
         powertrain: "1.6 터보 하이브리드",
+        bondCategory: "multipurpose",
     },
     {
         id: "hyundai-ioniq-5",
@@ -64,6 +70,7 @@ export const vehicles: Vehicle[] = [
         fuelType: "electric",
         displacement: null,
         powertrain: "전기",
+        bondCategory: "multipurpose",
     },
     {
         id: "hyundai-ioniq-6",
@@ -73,6 +80,7 @@ export const vehicles: Vehicle[] = [
         fuelType: "electric",
         displacement: null,
         powertrain: "전기",
+        bondCategory: "general",
     },
 
     // Kia
@@ -84,6 +92,7 @@ export const vehicles: Vehicle[] = [
         fuelType: "gasoline",
         displacement: 1999,
         powertrain: "2.0 가솔린",
+        bondCategory: "general",
     },
     {
         id: "kia-k8",
@@ -93,6 +102,7 @@ export const vehicles: Vehicle[] = [
         fuelType: "hybrid",
         displacement: 1598,
         powertrain: "1.6 터보 하이브리드",
+        bondCategory: "general",
     },
     {
         id: "kia-k9",
@@ -102,6 +112,7 @@ export const vehicles: Vehicle[] = [
         fuelType: "gasoline",
         displacement: 3342,
         powertrain: "3.3 터보 가솔린",
+        bondCategory: "general",
     },
     {
         id: "kia-seltos",
@@ -111,6 +122,7 @@ export const vehicles: Vehicle[] = [
         fuelType: "gasoline",
         displacement: 1598,
         powertrain: "1.6 터보 가솔린",
+        bondCategory: "multipurpose",
     },
     {
         id: "kia-sportage",
@@ -120,6 +132,7 @@ export const vehicles: Vehicle[] = [
         fuelType: "gasoline",
         displacement: 1598,
         powertrain: "1.6 터보 가솔린",
+        bondCategory: "multipurpose",
     },
     {
         id: "kia-sorento",
@@ -129,6 +142,7 @@ export const vehicles: Vehicle[] = [
         fuelType: "hybrid",
         displacement: 1598,
         powertrain: "1.6 터보 하이브리드",
+        bondCategory: "multipurpose",
     },
     {
         id: "kia-carnival",
@@ -138,6 +152,7 @@ export const vehicles: Vehicle[] = [
         fuelType: "hybrid",
         displacement: 1598,
         powertrain: "1.6 터보 하이브리드",
+        bondCategory: "sevenToTenSeat",
     },
     {
         id: "kia-ev3",
@@ -147,6 +162,7 @@ export const vehicles: Vehicle[] = [
         fuelType: "electric",
         displacement: null,
         powertrain: "전기",
+        bondCategory: "multipurpose",
     },
     {
         id: "kia-ev4",
@@ -156,6 +172,7 @@ export const vehicles: Vehicle[] = [
         fuelType: "electric",
         displacement: null,
         powertrain: "전기",
+        bondCategory: "general",
     },
     {
         id: "kia-ev6",
@@ -165,6 +182,7 @@ export const vehicles: Vehicle[] = [
         fuelType: "electric",
         displacement: null,
         powertrain: "전기",
+        bondCategory: "multipurpose",
     },
 
     // Genesis
@@ -176,6 +194,7 @@ export const vehicles: Vehicle[] = [
         fuelType: "gasoline",
         displacement: 2497,
         powertrain: "2.5 터보 가솔린",
+        bondCategory: "general",
     },
     {
         id: "genesis-g80",
@@ -185,6 +204,7 @@ export const vehicles: Vehicle[] = [
         fuelType: "gasoline",
         displacement: 2497,
         powertrain: "2.5 터보 가솔린",
+        bondCategory: "general",
     },
     {
         id: "genesis-g90",
@@ -194,6 +214,7 @@ export const vehicles: Vehicle[] = [
         fuelType: "gasoline",
         displacement: 3470,
         powertrain: "3.5 터보 가솔린",
+        bondCategory: "general",
     },
     {
         id: "genesis-gv60",
@@ -203,6 +224,7 @@ export const vehicles: Vehicle[] = [
         fuelType: "electric",
         displacement: null,
         powertrain: "전기",
+        bondCategory: "multipurpose",
     },
     {
         id: "genesis-gv70",
@@ -212,6 +234,7 @@ export const vehicles: Vehicle[] = [
         fuelType: "gasoline",
         displacement: 2497,
         powertrain: "2.5 터보 가솔린",
+        bondCategory: "multipurpose",
     },
     {
         id: "genesis-gv80",
@@ -221,6 +244,7 @@ export const vehicles: Vehicle[] = [
         fuelType: "gasoline",
         displacement: 2497,
         powertrain: "2.5 터보 가솔린",
+        bondCategory: "multipurpose",
     },
 
     // Tesla
@@ -232,6 +256,7 @@ export const vehicles: Vehicle[] = [
         fuelType: "electric",
         displacement: null,
         powertrain: "전기",
+        bondCategory: "general",
     },
     {
         id: "tesla-model-y",
@@ -241,6 +266,7 @@ export const vehicles: Vehicle[] = [
         fuelType: "electric",
         displacement: null,
         powertrain: "전기",
+        bondCategory: "multipurpose",
     },
 
     // BMW
@@ -252,6 +278,7 @@ export const vehicles: Vehicle[] = [
         fuelType: "gasoline",
         displacement: 1998,
         powertrain: "320i 2.0 가솔린",
+        bondCategory: "general",
     },
     {
         id: "bmw-5-series",
@@ -261,6 +288,7 @@ export const vehicles: Vehicle[] = [
         fuelType: "gasoline",
         displacement: 1998,
         powertrain: "520i 2.0 가솔린",
+        bondCategory: "general",
     },
     {
         id: "bmw-7-series",
@@ -270,6 +298,7 @@ export const vehicles: Vehicle[] = [
         fuelType: "gasoline",
         displacement: 2998,
         powertrain: "740i 3.0 가솔린",
+        bondCategory: "general",
     },
     {
         id: "bmw-x1",
@@ -279,6 +308,7 @@ export const vehicles: Vehicle[] = [
         fuelType: "gasoline",
         displacement: 1998,
         powertrain: "sDrive20i 2.0 가솔린",
+        bondCategory: "multipurpose",
     },
     {
         id: "bmw-x3",
@@ -288,6 +318,7 @@ export const vehicles: Vehicle[] = [
         fuelType: "gasoline",
         displacement: 1998,
         powertrain: "20 xDrive 2.0 가솔린",
+        bondCategory: "multipurpose",
     },
     {
         id: "bmw-x5",
@@ -297,6 +328,7 @@ export const vehicles: Vehicle[] = [
         fuelType: "gasoline",
         displacement: 2998,
         powertrain: "xDrive40i 3.0 가솔린",
+        bondCategory: "multipurpose",
     },
 
     // Mercedes-Benz
@@ -308,6 +340,7 @@ export const vehicles: Vehicle[] = [
         fuelType: "gasoline",
         displacement: 1496,
         powertrain: "C 200 1.5 가솔린",
+        bondCategory: "general",
     },
     {
         id: "benz-e-class",
@@ -317,6 +350,7 @@ export const vehicles: Vehicle[] = [
         fuelType: "gasoline",
         displacement: 1999,
         powertrain: "E 200 2.0 가솔린",
+        bondCategory: "general",
     },
     {
         id: "benz-s-class",
@@ -326,6 +360,7 @@ export const vehicles: Vehicle[] = [
         fuelType: "gasoline",
         displacement: 2999,
         powertrain: "S 450 3.0 가솔린",
+        bondCategory: "general",
     },
     {
         id: "benz-glc",
@@ -335,6 +370,7 @@ export const vehicles: Vehicle[] = [
         fuelType: "gasoline",
         displacement: 1999,
         powertrain: "GLC 300 2.0 가솔린",
+        bondCategory: "multipurpose",
     },
     {
         id: "benz-gle",
@@ -344,6 +380,7 @@ export const vehicles: Vehicle[] = [
         fuelType: "gasoline",
         displacement: 2999,
         powertrain: "GLE 450 3.0 가솔린",
+        bondCategory: "multipurpose",
     },
 
     // Audi
@@ -355,6 +392,7 @@ export const vehicles: Vehicle[] = [
         fuelType: "gasoline",
         displacement: 1984,
         powertrain: "2.0 TFSI 가솔린",
+        bondCategory: "general",
     },
     {
         id: "audi-a6",
@@ -364,6 +402,7 @@ export const vehicles: Vehicle[] = [
         fuelType: "gasoline",
         displacement: 1984,
         powertrain: "2.0 TFSI 가솔린",
+        bondCategory: "general",
     },
     {
         id: "audi-q4-etron",
@@ -373,6 +412,7 @@ export const vehicles: Vehicle[] = [
         fuelType: "electric",
         displacement: null,
         powertrain: "전기",
+        bondCategory: "multipurpose",
     },
     {
         id: "audi-q5",
@@ -382,6 +422,7 @@ export const vehicles: Vehicle[] = [
         fuelType: "gasoline",
         displacement: 1984,
         powertrain: "2.0 TFSI 가솔린",
+        bondCategory: "multipurpose",
     },
 
     // Volvo
@@ -395,6 +436,7 @@ export const vehicles: Vehicle[] = [
         fuelType: "gasoline",
         displacement: 1969,
         powertrain: "B5 2.0 가솔린 마일드 하이브리드",
+        bondCategory: "general",
     },
     {
         id: "volvo-xc40",
@@ -404,6 +446,7 @@ export const vehicles: Vehicle[] = [
         fuelType: "gasoline",
         displacement: 1969,
         powertrain: "B4 2.0 가솔린 마일드 하이브리드",
+        bondCategory: "multipurpose",
     },
     {
         id: "volvo-xc60",
@@ -413,6 +456,7 @@ export const vehicles: Vehicle[] = [
         fuelType: "gasoline",
         displacement: 1969,
         powertrain: "B5 2.0 가솔린 마일드 하이브리드",
+        bondCategory: "multipurpose",
     },
 
     // Porsche
@@ -424,6 +468,7 @@ export const vehicles: Vehicle[] = [
         fuelType: "gasoline",
         displacement: 2981,
         powertrain: "Carrera 3.0 가솔린",
+        bondCategory: "general",
     },
     {
         id: "porsche-taycan",
@@ -433,6 +478,7 @@ export const vehicles: Vehicle[] = [
         fuelType: "electric",
         displacement: null,
         powertrain: "전기",
+        bondCategory: "general",
     },
     {
         id: "porsche-panamera",
@@ -442,6 +488,7 @@ export const vehicles: Vehicle[] = [
         fuelType: "gasoline",
         displacement: 2894,
         powertrain: "2.9 가솔린",
+        bondCategory: "general",
     },
 
     // MINI
@@ -453,6 +500,7 @@ export const vehicles: Vehicle[] = [
         fuelType: "gasoline",
         displacement: 1499,
         powertrain: "Cooper C 1.5 가솔린",
+        bondCategory: "general",
     },
     {
         id: "mini-countryman",
@@ -462,6 +510,7 @@ export const vehicles: Vehicle[] = [
         fuelType: "gasoline",
         displacement: 1499,
         powertrain: "Countryman C 1.5 가솔린",
+        bondCategory: "multipurpose",
     },
 
     // Polestar
@@ -473,6 +522,7 @@ export const vehicles: Vehicle[] = [
         fuelType: "electric",
         displacement: null,
         powertrain: "Rear Motor 전기",
+        bondCategory: "multipurpose",
     },
 ];
 

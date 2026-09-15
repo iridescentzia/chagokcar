@@ -20,6 +20,5 @@ export type Region =
 export interface RegistrationCostResult {
     acquisitionTax: number;
     bondCost: number;
-    registrationFee: number;
     totalAdditionalCost: number;
 }
