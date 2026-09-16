@@ -25,7 +25,7 @@ export default function Complete() {
 
                     <h1 className="complete-title">구매 계획을 확인했어요!</h1>
                     <p className="complete-description">
-                        차곡카와 함께 세운 계획을 참고해서
+                        계산한 내용을 참고해
                         <br />
                         원하는 차량 구매를 차근차근 준비해보세요.
                     </p>

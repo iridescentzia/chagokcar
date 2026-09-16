@@ -115,9 +115,8 @@ button {
 }
 
 .btn-primary:hover:not(:disabled) {
-  background: #fff;
+  background: rgb(239, 238, 238);
   color: var(--color-black);
-  border-color: var(--color-black);
   transform: translateY(-1px);
 }
 
@@ -985,4 +984,80 @@ button {
   color: var(--color-text-light);
   line-height: 1.6;
   margin: 0;
+}
+
+.purchase-cost-section {
+  margin-bottom: 20px;
+}
+
+.purchase-cost-section-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+
+.info-icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  margin-left: 4px;
+  border-radius: 50%;
+  border: 1px solid var(--color-text-light);
+  background: none;
+  color: var(--color-text-light);
+  font-size: 0.7rem;
+  cursor: pointer;
+  padding: 0;
+  vertical-align: middle;
+}
+
+.purchase-cost-notice {
+  font-size: 0.8rem;
+  color: var(--color-text-light);
+  line-height: 1.6;
+  margin: 8px 0 24px;
+}
+
+.bottom-sheet-text {
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+  line-height: 1.6;
+  margin: 0 0 20px;
+}
+
+.purchase-plan-summary {
+  background: var(--color-notice-bg);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+}
+
+.purchase-plan-summary-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+}
+
+.purchase-plan-summary-divider {
+  height: 1px;
+  background: var(--color-border);
+  margin: 10px 0;
+}
+
+.purchase-plan-summary-highlight {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--color-primary);
+}
+
+.purchase-cost-notice {
+  background: var(--color-notice-bg);
+  border-radius: var(--radius-lg);
+  padding: 16px;
+  font-size: 0.8rem;
+  color: var(--color-text-light);
+  line-height: 1.6;
+  margin: 8px 0 24px;
 }

@@ -220,4 +220,6 @@ export const BOND_EXEMPTIONS_2026 = {
 
 export const BOND_DISCOUNT_POLICY_2026 = {
     calculationMethod: "immediateSale",
+    referenceDiscountRate: 0.065,
+    referenceDate: "2026-09-16",
 } as const;
