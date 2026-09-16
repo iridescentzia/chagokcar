@@ -803,3 +803,96 @@ button {
 .down-payment-cta {
   margin-top: 80px; /* 원하는 만큼 조정 */
 }
+
+.plan-method-field {
+  margin-bottom: 24px;
+}
+
+.plan-method-option {
+  display: flex;
+  gap: 12px;
+  padding: 16px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.plan-method-option-selected {
+  border-color: var(--color-primary);
+  background: var(--color-primary-light);
+}
+
+.plan-method-radio {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid var(--color-border);
+  flex-shrink: 0;
+  margin-top: 2px;
+  position: relative;
+}
+
+.plan-method-option-selected .plan-method-radio {
+  border-color: var(--color-primary);
+}
+
+.plan-method-option-selected .plan-method-radio::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  transform: translate(-50%, -50%);
+}
+
+.plan-method-option-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin: 0 0 4px;
+}
+
+.plan-method-option-desc {
+  font-size: 0.8rem;
+  color: var(--color-text-light);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.month-option-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.month-option-button {
+  padding: 14px 0;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: #fff;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.month-option-button-selected {
+  border-color: var(--color-primary);
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.custom-months-confirmed {
+  font-size: 0.85rem;
+  color: var(--color-primary);
+  font-weight: 700;
+  margin-top: 8px;
+}
+
+.plan-criteria-field {
+  margin-top: 24px; /* 원하는 만큼 조정 */
+}

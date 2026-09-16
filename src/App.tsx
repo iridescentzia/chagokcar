@@ -9,6 +9,7 @@ import MonthlyPlan from "./pages/MonthlyPlan";
 import Complete from "./pages/Complete"
 import PurchasePrice from "./pages/PurchasePrice";
 import DownPayment from "./pages/DownPayment";
+import PlanMethod from "./pages/PlanMethod.tsx"
 
 function App() {
     return (
@@ -24,6 +25,7 @@ function App() {
                 <Route path="/complete" element={<Complete/>}/>
                 <Route path="/purchase-price" element={<PurchasePrice/>}/>
                 <Route path="/down-payment" element={<DownPayment/>}/>
+                <Route path="/plan-method" element={<PlanMethod/>}/>
             </Routes>
         </BrowserRouter>
     );
