@@ -115,7 +115,8 @@ button {
 }
 
 .btn-primary:hover:not(:disabled) {
-  background: rgb(239, 238, 238);
+  background: #ffffff;
+  border-color: var(--color-black);
   color: var(--color-black);
   transform: translateY(-1px);
 }
