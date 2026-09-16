@@ -111,7 +111,9 @@ export default function PurchasePrice() {
                 <p className="price-input-notice">
                     {isPriceChanged ? (
                         <>
+                        <span className="price-input-notice-emphasis">
                             기준 차량 가격은 {formatWon(selectedVehicle.price)}이에요.
+                        </span>
                             <br />
                             입력한 예상 구매 가격을 기준으로 구매 계획을 계산해요.
                         </>
@@ -121,9 +123,9 @@ export default function PurchasePrice() {
                             기준 차량 가격을 입력해두었어요.
                         </span>
                             <br />
-                            원하는 트림이나 옵션 등을 고려해 예상 금액을 수정할 수
+                            원하는 트림이나 옵션 등을 고려해 예상 금액을
                             <br />
-                            있어요.
+                            수정할 수 있어요.
                         </>
                     )}
                 </p>

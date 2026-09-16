@@ -634,6 +634,7 @@ button {
 }
 
 .price-input-notice {
+  text-align: center;
   background: var(--color-primary-light);
   border-radius: var(--radius-md);
   padding: 12px;
@@ -895,4 +896,93 @@ button {
 
 .plan-criteria-field {
   margin-top: 24px; /* 원하는 만큼 조정 */
+}
+
+.plan-result-eyebrow {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin: 0 0 8px;
+}
+
+.plan-result-highlight-box {
+  background: var(--color-primary-light);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.plan-result-highlight-label {
+  font-size: 0.85rem;
+  color: var(--color-text-light);
+  margin: 0 0 8px;
+}
+
+.plan-result-highlight-value {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin: 0 0 8px;
+}
+
+.plan-result-highlight-desc {
+  font-size: 0.8rem;
+  color: var(--color-text-light);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.plan-result-info-list {
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 4px 16px;
+  margin-bottom: 20px;
+}
+
+.plan-result-info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.plan-result-info-row:last-child {
+  border-bottom: none;
+}
+
+.plan-result-info-label {
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+}
+
+.plan-result-info-value {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.plan-result-remaining-box {
+  background: var(--color-notice-bg);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.plan-result-remaining-label {
+  font-size: 0.85rem;
+  color: var(--color-text-light);
+  margin: 0 0 8px;
+}
+
+.plan-result-remaining-value {
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin: 0 0 8px;
+}
+
+.plan-result-remaining-desc {
+  font-size: 0.8rem;
+  color: var(--color-text-light);
+  line-height: 1.6;
+  margin: 0;
 }
